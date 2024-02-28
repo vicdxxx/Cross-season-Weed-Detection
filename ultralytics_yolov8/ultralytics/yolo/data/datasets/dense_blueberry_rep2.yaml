@@ -1,0 +1,27 @@
+# Ultralytics YOLO 🚀, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: D:\BoyangDeng\BlueberryDenseDetection  # dataset root dir
+train: train2017.1  # train images (relative to 'path') 128 images
+val: val2017.1  # val images (relative to 'path') 128 images
+test:  test2017.1 # test images (optional)
+
+#path: D:\BoyangDeng\BlueberryDenseDetection\PaddleDetection\dataset\BlueberryDenseDetection_sliced_448  # dataset root dir
+#train: instances_train2017.4_images_448_01 # train images (relative to 'path') 128 images
+#val: instances_val2017.4_images_448_01  # val images (relative to 'path') 128 images
+#test:  instances_test2017.4_images_448_01 # test images (optional)
+
+# Classes
+names:
+  0: Unblue_visible
+  1: Blue_occluded
+  2: Unblue_occluded
+  3: Blue_visible
+

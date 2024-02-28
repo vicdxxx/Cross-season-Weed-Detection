@@ -1,0 +1,97 @@
+# Ultralytics YOLO 🚀, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#path: E:\PHD\WeedDetection\CottonWeedDet12  # dataset root dir
+path: D:\Dataset\COCO
+train: xxx  # train images (relative to 'path') 128 images
+val: val2017  # val images (relative to 'path') 128 images
+
+# Classes
+names:
+  1: person
+  3: car
+  7: train
+  18: dog
+  21: cow
+  44: bottle
+  62: chair
+  0: x0
+  2: x2
+  4: x4
+  5: x5
+  6: x6
+  8: x8
+  9: x9
+  10: x10
+  11: x11
+  12: x12
+  13: x13
+  14: x14
+  15: x15
+  16: x16
+  17: x17
+  19: x19
+  20: x20
+  22: x22
+  23: x23
+  24: x24
+  25: x25
+  26: x26
+  27: x27
+  28: x28
+  29: x29
+  30: x30
+  31: x31
+  32: x32
+  33: x33
+  34: x34
+  35: x35
+  36: x36
+  37: x37
+  38: x38
+  39: x39
+  40: x40
+  41: x41
+  42: x42
+  43: x43
+  45: x45
+  46: x46
+  47: x47
+  48: x48
+  49: x49
+  50: x50
+  51: x51
+  52: x52
+  53: x53
+  54: x54
+  55: x55
+  56: x56
+  57: x57
+  58: x58
+  59: x59
+  60: x60
+  61: x61
+  63: x63
+  64: x64
+  65: x65
+  66: x66
+  67: x67
+  68: x68
+  69: x69
+  70: x70
+  71: x71
+  72: x72
+  73: x73
+  74: x74
+  75: x75
+  76: x76
+  77: x77
+  78: x78
+  79: x79
